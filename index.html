@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>pasword</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Password Generator</h2>
+      <div class="header">
+        <h1>PTx1f5DaFX</h1>
+        <img src="/css/imgs/icon/fa-regular_copy.svg" alt="" />
+      </div>
+      <div class="container">
+        <div class="volume">
+          <p>Character Length</p>
+          <h3 class="value">10</h3>
+        </div>
+        <input
+          class="range"
+          type="range"
+          name=""
+          value="10"
+          min="0"
+          max="20"
+          onChange="rangeSlide(this.value)"
+        />
+       
+        <div class="information">
+          <label>
+            <p class="check">
+              <input class="checkbox" type="checkbox" name="coding-notes" />
+              Include Uppercase Letters
+            </p>
+          </label>
+
+          <p class="check">
+            <input class="checkbox" type="checkbox" name="coding-notes" />
+            Include Lowercase Letters
+          </p>
+          <p class="check">
+            <input class="checkbox" type="checkbox" name="coding-notes" />
+            Include Numbers
+          </p>
+          <p class="check">
+            <input class="checkbox" type="checkbox" name="coding-notes" />
+            Include Symbols
+          </p>
+        </div>
+        <div class="cetting">
+          <p>STRENGTH</p>
+          <!-- <img src="/css/imgs/icon/Group 5.svg" alt="" /> -->
+          <div class="medium">
+            <h2>MEDIUM</h2>
+            <div class="rectagle"></div>
+            <div class="rectagle"></div>
+            <div class="rectagle"></div>
+            <div class="rectagle"></div>
+                    </div>
+          </div>
+        <button class="checboxbtn">
+          <p>GENERATE</p>
+          <img src="/css/imgs/icon/Shape.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>

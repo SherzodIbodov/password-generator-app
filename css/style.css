@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: black;
+}
+
+.wrapper {
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper h2 {
+  color: #817d92;
+  font-size: 24px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+.wrapper .header {
+  width: 540px;
+  height: 80px;
+  background-color: #24232c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px;
+}
+.wrapper .header h1 {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+}
+.wrapper .container {
+  width: 540px;
+  height: 538px;
+  background-color: #24232c;
+  margin-top: 24px;
+  padding: 32px;
+  display: grid;
+  gap: 32px;
+}
+.wrapper .container .volume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .container .volume p {
+  color: #e6e5ea;
+  font-size: 18px;
+  font-weight: 700;
+}
+.wrapper .container .volume h3 {
+  color: #a4ffaf;
+  font-size: 32px;
+  font-weight: 700;
+}
+.wrapper .container .range {
+  height: 18px;
+  accent-color: #a4ffaf;
+  cursor: pointer;
+}
+.wrapper .container .information {
+  color: #e6e5ea;
+  display: grid;
+  gap: 19px;
+  font-size: 18px;
+  font-weight: 700;
+  display: grid;
+}
+.wrapper .container .information .chack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  text-align: center;
+  padding-left: 24px;
+}
+.wrapper .container .information .checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: #a4ffaf;
+}
+.wrapper .container .cetting {
+  width: 476px;
+  height: 72px;
+  background: #18171f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px 25px;
+}
+.wrapper .container .cetting p {
+  color: #817d92;
+  font-size: 18px;
+  font-weight: 700;
+}
+.wrapper .container .cetting h2 {
+  color: #fff;
+}
+.wrapper .container .cetting .medium {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .container .cetting .medium div {
+  width: 10px;
+  height: 30px;
+  border: 2px solid #e6e5ea;
+}
+.wrapper .container .cetting .medium .active {
+  border: none;
+  background: #F8CD65;
+}
+.wrapper .container .cetting .medium .active:nth-child(2) {
+  background: red;
+}
+.wrapper .container .cetting .medium .active:nth-child(3) {
+  background: rgb(218, 123, 29);
+}
+.wrapper .container .cetting .medium .active:nth-child(4) {
+  background: r #F8CD65;
+}
+.wrapper .container .cetting .medium .active:nth-child(5) {
+  background: rgb(130, 191, 9);
+}
+.wrapper .container button {
+  width: 476px;
+  height: 65px;
+  background: #a4ffaf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 24px;
+  color: #24232c;
+  border: none;
+  cursor: pointer;
+}
+.wrapper .container button p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 550px) {
+  .wrapper {
+    padding: 20px;
+  }
+  .wrapper h2 {
+    color: #817d92;
+    font-size: 16px;
+    font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 16px;
+  }
+  .wrapper .header {
+    max-width: 343px;
+    height: 64px;
+    height: 64px;
+    padding: 16px;
+  }
+  .wrapper .header h1 {
+    font-size: 24px;
+    font-size: 700;
+  }
+  .wrapper .header img {
+    width: 17px;
+    height: 20px;
+  }
+  .wrapper .container {
+    margin-top: 16px;
+    max-width: 343px;
+    padding: 16px;
+  }
+  .wrapper .container img {
+    max-width: 311px;
+    height: 28px;
+  }
+  .wrapper .container .volume {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper .container .volume p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #e6e5ea;
+  }
+  .wrapper .container .volume h3 {
+    color: #a4ffaf;
+    font-size: 24px;
+  }
+  .wrapper .container .information {
+    display: grid;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .wrapper .container .information p .checkbox {
+    width: 15px;
+    height: 15px;
+  }
+  .wrapper .container .cetting {
+    max-width: 311px;
+    height: 56px;
+  }
+  .wrapper .container .cetting p {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .wrapper .container .cetting img {
+    width: 145px;
+    height: 28px;
+  }
+  .wrapper .container button {
+    max-width: 311px;
+    height: 56px;
+  }
+  .wrapper .container button p {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .wrapper .container button img {
+    width: 12px;
+    height: 12px;
+  }
+}
